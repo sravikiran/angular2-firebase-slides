@@ -17,23 +17,44 @@
 	</div>
 	<div id="impress">
 
-		<div id="bored" class="step" data-x="400">
-			<q>Aren’t you just <b>bored</b> with all those slides-based presentations?</q>
+		<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+			<q>
+				Code lab: Angular 2 with Firebase
+				<img src="images/GDG.png" style="width: 300px;" alt="">
+				<img src="images/ng.png" style="width: 350px;" alt="">
+			</q>
 		</div>
 
-		<div class="step" data-x="-400">
+		<!--
+        
+        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
+        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
+        
+        So in the example below it'll be `step-2`.
+        
+        The hash part of the url when this step is active will be `#/step-2`.
+        
+        You can also use `#step-2` in a link, to point directly to this particular step.
+        
+        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
+        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
+        
+    -->
+		<div class="step slide" data-x="0" data-y="-1500">
 			<q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
 		</div>
 
-		<div class="step" data-y="400">
+		<div class="step slide" data-x="1000" data-y="-1500">
 			<q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
 		</div>
 
-		<div class="step" data-y="-400">
+
+		<!--<div class="step" data-y="-400">
 			<span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
-		</div>
+			<h1>impress.js<sup>*</sup></h1>
+			<span class="footnote"><sup>*</sup> no rhyme intended</span>
+		</div>-->
+
 	</div>
 	<script src="impress.js"></script>
 	<script>impress().init();</script>
