@@ -3,13 +3,33 @@
 
 <head>
 	<link rel="stylesheet" href="demo.css">
+	<style>
+		#main {
+			float: left;
+			width: 350px;
+			text-align: center;
+			font-size: 34px;
+		}
+		
+		#sidebar {
+			float: right;
+			width: 350px;
+			text-align: center;
+			font-size: 35px;
+		}
+
+		#bored {
+			text-align: center;			
+		}
+
+		.heading {
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body class="impress-not-supported">
 
-	<!--
-    For example this fallback message is only visible when there is `impress-not-supported` class on body.
--->
 	<div class="fallback-message">
 		<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version
 			of this presentation.</p>
@@ -20,34 +40,55 @@
 		<div id="bored" class="step slide" data-x="-1000" data-y="-1500">
 			<q>
 				Code lab: Angular 2 with Firebase
+				<br>
 				<img src="images/GDG.png" style="width: 300px;" alt="">
+				<br>
 				<img src="images/ng.png" style="width: 350px;" alt="">
 			</q>
 		</div>
 
-		<!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
 		<div class="step slide" data-x="0" data-y="-1500">
-			<q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
+			<q id="main">
+				<img src="http://devfest.gdghyd.org/wp-content/uploads/2015/06/Ravi-Kiran.jpg" alt="">
+				<br>
+				Ravi Kiran
+				<br>
+				Sr Developer, Innominds
+				Microsoft MVP
+				@sravi_kiran
+			</q>
+			<q id="sidebar">
+				<img src="http://devfest.gdghyd.org/wp-content/uploads/2015/06/V-Keerti-Kotaru.jpg" alt="">
+				<br>
+				V Keerti Kotaru
+				Principal Architect, CTS
+				Microsoft MVP
+				@vencki
+			</q>
 		</div>
 
 		<div class="step slide" data-x="1000" data-y="-1500">
-			<q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+			<q>
+				<h2 class="heading">What is Angular 2?</h2>
+				<ul style="margin-left: 35px;">
+					<li>Web UI Framework from Google</li>
+					<li>Helps in building rich client applications</li>
+					<li>Embraces latest web technologies</li>
+				</ul>
+			</q>
 		</div>
 
+		<div class="step slide" data-x="2000" data-y="-1500">
+			<q>
+				<h2 class="heading">Core Concepts</h2>
+				<ul style="margin-left: 35px;">
+					<li>Components</li>
+					<li>Modules</li>
+					<li>Dependency Injection</li>
+					<li>Routing</li>
+				</ul>
+			</q>
+		</div>
 
 		<!--<div class="step" data-y="-400">
 			<span class="try">then you should try</span>
